@@ -45,7 +45,7 @@ class SudokuSolverCara1
                 $record = true;
             }
 
-            if ($record == false) {
+            if ($record === false) {
                 continue;
             }
             $lastPosition = $position;
@@ -73,7 +73,7 @@ class SudokuSolverCara1
                 $x = $location["x"];
                 $y = $location["y"];
                 $newData[$x][$y] = $value;
-                if ($isValidValue == true) {
+                if ($isValidValue === true) {
                     $tempSolusion[$position] = $value;
                     $prevValue = null;
                 } else {
