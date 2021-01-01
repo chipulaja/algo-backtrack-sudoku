@@ -12,8 +12,7 @@ matrix:
       dist: trusty
 
 before_script:
-  - export ADDITIONAL_PATH=`php -i | grep -F --color=never 'Scan this dir for additional .ini files'`
-  - echo 'xdebug.max_nesting_level=999999' | sudo tee ${ADDITIONAL_PATH:42}/algo_backtrack_sudoku.ini
+  - echo 'xdebug.max_nesting_level=999999' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
   - composer install
 
 script:
