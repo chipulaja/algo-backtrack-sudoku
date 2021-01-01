@@ -13,8 +13,6 @@ a library for solving sudoku.
 - [Install](#install)
 - [Usage](#usage)
 - [Testing](#testing)
-- [Contributing](#contributing)
-- [Credits](#credits)
 
 ## Install
 
@@ -27,7 +25,7 @@ $ composer require chipulaja/algo-backtrack-sudoku
 ## Usage
 
 ```php
-use Chipulaja\Algo\Backtrack\Sudoku\SudokuSolverCara1();
+use Chipulaja\Algo\Backtrack\Sudoku\SudokuSolverCara1;
 
 $data = [
     [0,2,0,  0,1,3,  0,6,0],
